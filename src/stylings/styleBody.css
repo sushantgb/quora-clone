@@ -1,0 +1,523 @@
+/* container style */
+.container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 2em 10em;
+    gap: 2em;
+}
+
+
+/* styling for spaces */
+.spaces{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.create-spaces,
+.discover-spaces{
+    display: flex;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    gap: 0.5em;
+    background-color: #dbdbdb;
+    width: 100%;
+    cursor: pointer;
+}
+.create-spaces input,
+.discover-spaces input{
+    background: none;
+    border-style: none;
+    cursor: pointer;
+}
+.create-spaces input:focus,
+.discover-spaces input:focus{
+    outline: none;
+}
+.spaces-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5em;
+}
+.space-card{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+.space-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1em;
+}
+.space-icon img{
+    width: 1.5em;
+    height: 1.5em;
+    border: solid thin rgb(211, 210, 210);
+    padding: 0.1em;
+    border-radius: 0.2em;
+}
+.space-category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.space-category button{
+    text-decoration: none;
+    border-style:none;
+    background: none;
+    color: rgb(53, 52, 52);
+    cursor: pointer;
+}
+
+/* middle section styling */
+.middle-segment{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2em;
+    width: 50%;
+}
+
+/* post section styling */
+.post-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    border: solid thin rgb(212, 212, 212);
+    padding: 1em 0.5em 0.5em 0.5em;
+    border-radius: 0.5em;
+    width: 100%;
+}
+.upper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.lower{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0.5em;
+}
+.part button{
+    display: flex;
+    gap: 0.5em;
+    padding: 0.5em 3em;
+    background: none;
+    border-style:none;
+    font-size: 1em;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.part button:hover{
+    background-color:rgb(233, 232, 232);
+}
+.divider{
+    color: grey;
+}
+.post-section img{
+    width: 2em;
+}
+.post-section input{
+    padding: 1em;
+    width: 35em;
+    border: solid thin rgb(185, 185, 185);
+    border-radius: 2em;
+    background-color: rgb(236, 236, 236, 0.5);
+}
+.post-section input:focus{
+    outline: none;
+}
+
+/* popup styling for creating the post */
+.post-popup{
+    position:absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 2em;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+.inner-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+    margin: auto;
+    margin: 2em;
+    padding: 1em;
+    width: 50%;
+    height: 80%;
+    color: black;
+    border-radius: 0.8em;
+    z-index: 100;
+}
+.popper-head{
+    display: flex;
+    justify-content: flex-start;
+}
+.close-popup{
+    background: none;
+    border-style: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 100%;
+    height: 2em;
+    width: 2em;
+    transition: all 0.5s;
+}
+.close-popup:hover{
+    background-color: rgb(207, 205, 205);
+}
+
+.tabs-nav{
+    display: flex;
+    justify-content: center;
+}
+.tabs-nav div{
+    display: flex;
+    justify-content: center;
+    border-bottom: solid thin grey;
+    width: 250%;
+}
+.tabs-nav button{
+    padding: 0.8em;
+    border-style: none;
+    background: none;
+    width: 250%;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+.tabs-nav button:active{
+    border-bottom: blue;
+}
+
+/* styling for creating-post section */
+.question-section{
+    padding: 2em 0.5em;
+}
+
+.user-category{
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    gap: 0.5em;
+}
+.user-category img{
+    width: 1.5em;
+    height: 1.5em;
+}
+.user-category button{
+    display: flex;
+    gap: 0.8em;
+    padding: 0.5em;
+    border-style: none;
+    background-color: rgb(199, 198, 198, 0.4);
+    color: rgb(104, 103, 103);
+    border-radius: 2em;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.user-category button:hover{
+    opacity: 0.7;
+}
+
+.field-box{
+    height: 30vh;
+    padding: 1em 0;
+}
+.field-box input{
+    width: 100%;
+    padding: 1em 0 0.5em 0.2em;
+    border-style: none;
+    border-bottom: solid rgb(175, 174, 174) thin;
+    font-size: 1.1em;
+}
+.field-box input:focus,
+.field-box textarea:focus{
+    outline: none;
+}
+
+.field-box textarea{
+    width: 100%;
+    padding: 1em 0 0.5em 0.2em;
+    border-style: none;
+    font-size: 1.1em;
+    resize: none;
+}
+
+/* footer buttons in the popup */
+.foot-buttons{
+    display: flex;
+    justify-content: flex-end;
+    border-top: solid grey thin;
+    padding: 1em;
+    gap: 1em;
+}
+.foot-buttons button{
+    padding: 1em 2em;
+    background: none;
+    border-style: none;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+#cancelFoot:hover{
+    background-color: rgb(167, 167, 167, 0.5);
+}
+#submitFoot{
+    background-color: rgba(13, 13, 226, 0.8);
+    color: white;
+}
+#submitFoot:hover{
+    opacity: 0.6;
+}
+
+/* dropdown for post visibility */
+.drop-options{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 2px grey;
+    position: relative;
+    top: 0em;
+}
+.dropper-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.dropper-list input[type="radio"]{
+    visibility: hidden;
+}
+.dropper-list label{
+    cursor: pointer;
+    padding: 0.2em;
+}
+.list-element:hover{
+    background-color: rgb(206, 205, 205, 0.5);
+}
+.list-element{
+    display: flex;
+    gap: 0;
+    padding: 0.5em 3em 0.5em 0;
+}
+
+/* posts feed styling */
+.post-feed{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.post-feed-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    border:solid thin rgb(212, 212, 212);
+    border-radius: 0.5em;
+    padding: 1em;
+    gap: 0.2em;
+}
+.feed-upper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.user-avatar img{
+    height: 3em;
+    width: 3em;
+}
+.user-details{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    padding: 0.5em;
+    width: 80%;
+}
+.user-heading{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    gap: 0.5em;
+}
+.user-heading button{
+    border-style: none;
+    background: none;
+    cursor: pointer;
+    color: blue;
+    transition: all 0.5s;
+}
+.user-heading button:hover{
+    opacity: 0.7;
+}
+.user-description{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    gap: 0.5em;
+    font-size: 0.8em;
+    color: rgb(85, 85, 85);
+}
+.cross-button, 
+.three-dots-btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.cross-button button,
+.three-dots-btn button{
+    background: none;
+    border-style: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 100%;
+    padding: 0.5em;
+    transition: all 0.5s;
+}
+.cross-button button:hover,
+.three-dots-btn button:hover{
+    background-color: rgb(192, 188, 188, 0.7);
+}
+.question-bar{
+    padding: 1em 0;
+}
+.post-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: justify;
+    gap: 1em;
+}
+.read-more-btn{
+    display: inline;
+    border-style: none;
+    background: none;
+    cursor: pointer;
+    color: blue;
+    transition: all 0.5s;
+}
+.read-more-btn:hover{
+    opacity: 0.7;
+}
+.expanded-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1em;
+    text-align: justify;
+    white-space: pre-wrap;
+}
+.views-text{
+    color: grey;
+}
+.image-sect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 1em 0 1em 0;
+}
+.image-sect img{
+    width: 100%;
+}
+
+/* buttons styling in the bottom of posts */
+.buttons-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 1em;
+    width: 100%;
+}
+.reaction-buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    gap: 1em;
+    width: 80%;
+}
+
+.upvote-btns{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.2em;
+    gap: 0em;
+    border: solid thin grey;
+    border-radius: 2em;
+    gap: 1em;
+}
+.upvote-btns button{
+    border-style: none;
+    background: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 100%;
+    padding: 0.5em;
+}
+.upvote-btns button:hover{
+    opacity: 0.7;
+}
+.upvoteBtn, 
+.downvoteBtn{
+    color: grey;
+}
+.votes-count{
+    color: grey;
+}
+
+.comment-info,
+.repost-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    border: solid thin grey;
+    padding: 0.5em;
+    border-radius: 2em;
+    color: grey;
+}
+.comment-icon,
+.repost-icon{
+    border-style: none;
+    background: none;
+    color: grey;
+    cursor: pointer;
+}
+
+
+/* extra classes */
+.hidden-class{
+    display: none;
+}
+.blue-class{
+    color: blue;
+}
+
