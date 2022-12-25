@@ -563,6 +563,7 @@
 .follow-icons{
     border: solid thin rgb(187, 186, 186);
     border-radius: 0.3em;
+    padding: 0.2em;
 }
 .follow-card-details{
     width: 100%;
@@ -582,7 +583,7 @@
     width: 80%;
 }
 .follow-icons img{
-    width: 3em;
-    height: 3em;
+    width: 2em;
+    height: 2em;
 }
 
