@@ -1,5 +1,5 @@
-# quora-clone
-A Quora clone static app made by ReactJS
+# Quora clone
+A static Quora clone app made with ReactJS
 
 <hr>
 
