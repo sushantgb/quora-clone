@@ -12,7 +12,7 @@
 .spaces{
     display: flex;
     flex-direction: column;
-    gap: 0.8em;
+    gap: 0.5em;
     justify-content: flex-start;
     align-items: flex-start;
     position: fixed;
@@ -43,7 +43,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 1.5em;
+    gap: 1em;
 }
 .space-card{
     display: flex;
