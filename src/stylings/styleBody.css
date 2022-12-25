@@ -135,7 +135,7 @@
 }
 .post-section input{
     padding: 1em;
-    width: 45em;
+    width: 40em;
     border: solid thin rgb(185, 185, 185);
     border-radius: 2em;
     background-color: rgb(236, 236, 236, 0.5);
@@ -539,7 +539,7 @@
     align-items: flex-start;
     width: 20%;
     position: fixed;
-    right: 9em;
+    right: 6.5em;
 }
 .follow-feed-head{
     border-bottom: solid thin rgb(202, 200, 200);
