@@ -45,7 +45,7 @@ function CreatePopup(props) {
                 </div>
                 <AddQuest addquesttab={tabSelection} />
                 <div className='foot-buttons'>
-                    <button id='cancelFoot' onClick={() => props.popclosed}>Cancel</button>
+                    <button id='cancelFoot' onClick={props.popclosed}>Cancel</button>
                     <form onSubmit={props.popclosed}>
                         <button type='submit' id='submitFoot' onClick={Submission}>{buttonText}</button>
                     </form>

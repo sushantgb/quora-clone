@@ -1,5 +1,5 @@
 import React from 'react';
-import PostFeed from '../../jsondata/postfeed';
+import PostFeed from '../../data/postfeed';
 import PostFeedCards from './PostFeedCards';
 
 export default function PostFeedComp() {

@@ -3,6 +3,7 @@ import "../stylings/styleBody.css";
 import LeftSidebar from "./bodyComp/LeftSidebar";
 import MiddleSection from "./bodyComp/MiddleSection";
 import PostFeedComp from "./bodyComp/PostFeedComp";
+import RightSideBar from "./bodyComp/RightSideBar";
 
 function BodyContent() {
     return (
@@ -13,6 +14,7 @@ function BodyContent() {
                     <MiddleSection />
                     <PostFeedComp />
                 </div>
+                <RightSideBar />
             </div>
         </>
     );

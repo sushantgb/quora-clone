@@ -3,7 +3,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 2em 10em;
+    margin: 6em 6em;
     gap: 2em;
 }
 
@@ -15,6 +15,7 @@
     gap: 0.8em;
     justify-content: flex-start;
     align-items: flex-start;
+    position: fixed;
 }
 
 .create-spaces,
@@ -83,7 +84,9 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 2em;
-    width: 50%;
+    width: 55%;
+    position: relative;
+    left: 13em;
 }
 
 /* post section styling */
@@ -132,7 +135,7 @@
 }
 .post-section input{
     padding: 1em;
-    width: 35em;
+    width: 45em;
     border: solid thin rgb(185, 185, 185);
     border-radius: 2em;
     background-color: rgb(236, 236, 236, 0.5);
@@ -143,16 +146,17 @@
 
 /* popup styling for creating the post */
 .post-popup{
-    position:absolute;
+    position:fixed;
     top: 0;
     left: 0;
+    margin: auto;
     display: flex;
     justify-content: center;
     background-color: rgb(0, 0, 0, 0.5);
     padding: 2em;
     width: 100vw;
     height: 100vh;
-    z-index: 10;
+    z-index: 100;
 }
 .inner-content{
     display: flex;
@@ -341,9 +345,10 @@
 }
 .feed-upper{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 100%;
 }
+
 .user-avatar img{
     height: 3em;
     width: 3em;
@@ -386,6 +391,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
+    width: 20%;
 }
 .cross-button button,
 .three-dots-btn button{
@@ -441,6 +447,7 @@
     align-items: center;
     align-content: center;
     margin: 1em 0 1em 0;
+    width: 100%;
 }
 .image-sect img{
     width: 100%;
@@ -519,5 +526,63 @@
 }
 .blue-class{
     color: blue;
+}
+
+/* for right bar */
+.right-bar{
+    display: flex;
+    flex-direction: column;
+    border: solid thin rgb(163, 162, 162, 0.5);
+    padding:0 0 0.4em 0;
+    border-radius: 0.5em;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 20%;
+    position: fixed;
+    right: 9em;
+}
+.follow-feed-head{
+    border-bottom: solid thin rgb(202, 200, 200);
+    padding: 1em;
+    width: 100%;
+}
+.follow-cards{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0.5em 0.2em;
+    border-bottom: solid thin rgb(221, 218, 218);
+    gap: 0.5em;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.follow-cards:hover{
+    background-color: rgba(210, 211, 212, 0.5);
+}
+.follow-icons{
+    border: solid thin rgb(187, 186, 186);
+    border-radius: 0.3em;
+}
+.follow-card-details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.2em;
+}
+.follow-card-details h5{
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.follow-card-details span{
+    color: grey;
+    font-size: 0.7em;
+    width: 80%;
+}
+.follow-icons img{
+    width: 3em;
+    height: 3em;
 }
 

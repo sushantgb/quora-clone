@@ -1,5 +1,5 @@
 import React from "react";
-import SpaceData from "../../jsondata/space";
+import SpaceData from "../../data/space";
 import SpaceElement from "./SpaceElement";
 
 function LeftSidebar() {
