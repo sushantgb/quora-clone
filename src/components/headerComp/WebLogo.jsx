@@ -1,11 +1,14 @@
 import React from "react";
-import logo from "./images/logo.png"
+import logo from "./images/logo.png";
+import { NavLink } from "react-router-dom";
 
 function WebLogo() {
     return (
         <>
             <div className="websiteIdentity">
-                <a href="#home" id="web-icon"><img alt="quora icon" src={logo} /></a>
+                <NavLink id="web-icon" to='/'>
+                    <img alt="quora icon" src={logo} />
+                </NavLink>
             </div>
         </>
     );

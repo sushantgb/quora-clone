@@ -1,24 +1,28 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function HeaderIcons() {
+
+    /* active link class */
+    const activeClass = ({isActive}) => (isActive ? "active" : "navlinks")
     return (
         <>
             <div className="header-icons">
-                <a href="#home" title="Home">
+                <NavLink to='/' title="Home" className={activeClass}>
                     <i class="bi bi-house"></i>
-                </a>
-                <a href="#home" title="Following">
+                </NavLink>
+                <NavLink to='/following' title="Following" className={activeClass}>
                     <i class="bi bi-filter-square"></i>
-                </a>
-                <a href="#home" title="Answers">
+                </NavLink>
+                <NavLink to='/answers' title="Answers" className={activeClass}>
                     <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="#home" title="Spaces">
+                </NavLink>
+                <NavLink to='/spaces' title="Spaces" className={activeClass}>
                     <i class="bi bi-people"></i>
-                </a>
-                <a href="#home" title="Notifications">
+                </NavLink>
+                <NavLink to='/notifications' title="Notifications" className={activeClass}>
                     <i class="bi bi-bell"></i>
-                </a>
+                </NavLink>
             </div>
         </>
     );

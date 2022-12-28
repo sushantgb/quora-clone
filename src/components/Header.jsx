@@ -10,14 +10,15 @@ import QuestBtn from "./headerComp/QuestBtn";
 function Header() {
     return (
         <>
-            <div className="header" id="home">
+            {/* navigation bar */}
+            <nav className="header" id="home">
                 <WebLogo/>
                 <HeaderIcons/>
                 <Search/>
                 <TryBtn/>
                 <ProfileIcons/>
                 <QuestBtn/>
-            </div>
+            </nav>
         </>
     );
 }

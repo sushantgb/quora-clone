@@ -2,11 +2,10 @@
 .header {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     align-content: center;
-    padding: 0.5em;
     margin: auto;
-    gap: 2em;
+    gap: 1em;
     box-shadow: 1px 1px 5px grey;
     position: fixed;
     top: 0;
@@ -20,6 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0.5em;
 }
 
 #web-icon {
@@ -36,16 +36,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid thin grey;
-    padding: 0 0.5em;
+    border: solid thin rgb(202, 201, 201);
     border-radius: 0.2em;
-    margin-left: 0;
+    margin: 0.5em 0;
+    padding: 0.1em 0.5em;
+}
+
+.search-bar i {
+    color: grey;
 }
 
 .search-bar input {
-    padding: 0.8em;
+    padding: 0.6em;
     border-style: none;
     font-size: 1em;
+    width: 15em;
 }
 
 .search-bar input:focus {
@@ -58,17 +63,27 @@
     justify-content: center;
     align-content: center;
     gap: 1em;
+    padding: 0;
 }
 
-.header-icons a {
+.header-icons .navlinks {
     color: black;
-    padding: 0.2em 0.5em;
+    padding: 0.7em 0.5em;
     transition: all 0.5s;
+    border: solid white;
 }
 
-.header-icons a:hover {
-    background-color: rgb(223, 74, 84);
-    border-radius: 0.2em;
+.header-icons .navlinks:hover {
+    border-bottom: solid;
+}
+/* active link class */
+.header-icons .active {
+    border: solid white;
+    border-bottom: solid;
+    background-color: rgb(219, 215, 215, 0.8);
+    color: black;
+    padding: 0.7em 0.7em;
+    transition: all 0.5s;
 }
 
 .header-icons i {
@@ -76,8 +91,12 @@
 }
 
 /* try button styling */
+.try-button {
+    padding: 0.5em;
+}
+
 .try-button button {
-    padding: 1em 1.8em;
+    padding: 0.8em 1.8em;
     border-style: none;
     cursor: pointer;
     border-radius: 1em;
@@ -95,6 +114,7 @@
     align-items: center;
     align-content: center;
     gap: 1em;
+    padding: 0.5em;
 }
 
 .profile-icons img {
@@ -111,6 +131,7 @@
     justify-content: center;
     align-items: center;
     gap: 0;
+    padding: 0.5em;
 }
 
 .quest-button button {
@@ -135,4 +156,34 @@
 #dropBtn {
     background-color: rgb(179, 7, 7);
     border-radius: 0 0.5em 0.5em 0;
+}
+
+/* additional pages */
+
+.empty-page,
+.error-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    color: grey;
+    text-shadow: 0px 1px 10px rgb(145, 143, 143);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(235, 233, 233);
+    background: url(https://cdn.dribbble.com/users/3067170/screenshots/6745003/untitled-3_4x.png?compress=1&resize=768x576&vertical=top) center no-repeat;
+    background-size: cover;
+}
+
+.empty-page .head,
+.error-div .head {
+    font-size: 5em;
+}
+
+.empty-page p,
+.error-div p {
+    font-size: 2em;
 }
