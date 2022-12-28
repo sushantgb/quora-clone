@@ -12,9 +12,11 @@ function NotificationSection(props) {
                 </div>
                 <div className='filters-list'>
                     {NotificationFilterBtn.map((val) => {
-                        const {key, name} = val;
+                        const { key, name } = val;
                         return (
-                            <button key={key}>{name}</button>     
+                            <div>
+                                <button key={key}>{name}</button>
+                            </div>
                         )
                     })}
                 </div>

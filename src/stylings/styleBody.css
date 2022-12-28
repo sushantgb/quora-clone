@@ -596,13 +596,21 @@ body{
 /* notification page */
 .notification-container{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: white;
+    padding: 4em 0;
+    width: 80%;
+    margin: auto;
+    border: solid;
 }
 .notification-div{
     display: flex;
+    gap: 1em;
 }
 .filters-notices{
-    border: solid;
+    width: 40%;
+    border-right: solid thin grey;
 }
 .filter-list{
     border: solid;
@@ -610,4 +618,8 @@ body{
 .filter-list button{
     padding: 1em;
     border: solid;
+}
+.message-list img{
+    width: 3em;
+    height: 3em;
 }

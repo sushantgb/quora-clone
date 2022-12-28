@@ -13,7 +13,7 @@ function MessageComp() {
                         </div>
                         <div className='message-details'>
                             <div className='message-head'>
-                                <span>{title} - {time}</span>
+                                <span>{title} ❱ {time}</span>
                             </div>
                             <div className='message-bold'>
                                 <span><strong>{message}</strong></span>
