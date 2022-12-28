@@ -1,4 +1,7 @@
 /* container style */
+body{
+    background-color: rgba(202, 202, 202, 0.8);
+}
 .container{
     display: flex;
     justify-content: flex-start;
@@ -24,7 +27,7 @@
     padding: 0.5em;
     border-radius: 0.2em;
     gap: 0.5em;
-    background-color: #dbdbdb;
+    background-color: #ffffff;
     width: 100%;
     cursor: pointer;
 }
@@ -99,6 +102,7 @@
     padding: 1em 0.5em 0.5em 0.5em;
     border-radius: 0.5em;
     width: 100%;
+    background-color: white;
 }
 .upper{
     display: flex;
@@ -342,6 +346,7 @@
     border-radius: 0.5em;
     padding: 1em;
     gap: 0.2em;
+    background-color: white;
 }
 .feed-upper{
     display: flex;
@@ -540,6 +545,7 @@
     width: 20%;
     position: fixed;
     right: 6.5em;
+    background-color: white;
 }
 .follow-feed-head{
     border-bottom: solid thin rgb(202, 200, 200);

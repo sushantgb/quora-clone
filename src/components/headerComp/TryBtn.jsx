@@ -4,7 +4,7 @@ function TryBtn() {
     return (
         <>
             <div className="try-button">
-                <button type="button" id="tryBtn">Try Quora+</button>
+                <button type="button" id="tryBtn" onClick={() => alert("This is a Dummy Button")}>Try Quora+</button>
             </div>
         </>
     );
