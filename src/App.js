@@ -4,6 +4,7 @@ import BodyContent from './components/BodyContent';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import ErrorPage from './components/otherPages/ErrorPage';
 import EmptyPage from './components/otherPages/EmptyPage';
+import NotificationPage from './components/notificationpage/NotificationPage';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Route exact path ='/following' element={<EmptyPage />}/>
         <Route exact path ='/answers' element={<EmptyPage />}/>
         <Route exact path ='/spaces' element={<EmptyPage />}/>
-        <Route exact path ='/notifications' element={<EmptyPage />}/>
+        <Route exact path ='/notifications' element={<NotificationPage />}/>
         <Route path='*' element={<ErrorPage />} />
       </Routes>
     </div>

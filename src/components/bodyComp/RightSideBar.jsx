@@ -1,5 +1,5 @@
 import React from 'react';
-import QuestionFeed from '../../data/rightbarfeed';
+import QuestionFeed from '../../data/Rightbarfeed';
 import FollowCard from './FollowCard';
 
 function RightSideBar() {

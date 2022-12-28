@@ -593,3 +593,21 @@ body{
     height: 2em;
 }
 
+/* notification page */
+.notification-container{
+    display: flex;
+    background-color: white;
+}
+.notification-div{
+    display: flex;
+}
+.filters-notices{
+    border: solid;
+}
+.filter-list{
+    border: solid;
+}
+.filter-list button{
+    padding: 1em;
+    border: solid;
+}
