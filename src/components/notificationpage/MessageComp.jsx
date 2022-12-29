@@ -1,33 +1,25 @@
 import React from 'react';
-import NotificationData from '../../data/NotificationData';
 
-function MessageComp() {
+/* ful notification card - component */
+function MessageComp(props) {
     return (
         <div>
-            {NotificationData.map((val) => {
-                const { key, icon, title, time, message, details, category } = val;
-                return (
-                    <div className='message-card' key={key}>
-                        <div className='message-icon'>
-                            <img alt='icons of message' src={icon} />
-                        </div>
-                        <div className='message-details'>
-                            <div className='message-head'>
-                                <span>{title} ❱ {time}</span>
-                            </div>
-                            <div className='message-bold'>
-                                <span><strong>{message}</strong></span>
-                            </div>
-                            <div className='message-details'>
-                                <span>{details}</span>
-                            </div>
-                            <div className='hidden-category'>
-                                <span>{category}</span>
-                            </div>
-                        </div>
+            <div className='message-card' onClick={() => alert("You Have Read The Message")}>
+                <div className='message-icon'>
+                    <img alt='icons of message' src={props.icon} />
+                </div>
+                <div className='message-details'>
+                    <div className='message-head'>
+                        <span>{props.title} ❱ {props.time}</span>
                     </div>
-                )
-            })}
+                    <div className='message-bold'>
+                        <span>{props.message}</span>
+                    </div>
+                    <div className='message-describe'>
+                        <span>{props.details}</span>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

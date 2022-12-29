@@ -15,7 +15,7 @@ const NotificationData = [
         time: "December 13",
         message: "Congratulations, your answers had 107 views in the past week!",
         details: "",
-        category: "Your Profile"
+        category: "Your profile"
     },
     {
         key: 3,
@@ -23,7 +23,7 @@ const NotificationData = [
         title: "",
         time: "December 13",
         message: "What is 3+5+7+9+11?",
-        details: "Your anwer is getting views. Add a relevant and specific credential to get more views.",
+        details: "Your answer is getting views. Add a relevant and specific credential to get more views.",
         category: "Announcements"
     },
     {
@@ -33,7 +33,7 @@ const NotificationData = [
         time: "December 12",
         message: "Congratulations, your content crossed 100 views!",
         details: "",
-        category: "Your Profile"
+        category: "Your profile"
     },
     {
         key: 5,
