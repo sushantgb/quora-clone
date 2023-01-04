@@ -186,7 +186,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    gap: 0.5em;
     color: grey;
     text-shadow: 0px 1px 10px rgb(145, 143, 143);
     text-transform: uppercase;
@@ -195,12 +195,13 @@
     height: 100vh;
     background-color: rgb(135, 212, 248);
 }
-
+.empty-page span:first-child,
+.error-div span:first-child{
+    font-size: 10em;   
+}
 .empty-page .head,
 .error-div .head {
     font-size: 5em;
-    background-color:  rgba(235, 235, 235, 0.5);
-    padding: 0.5em 0;
     width: 100%;
     text-align: center;
 }
@@ -208,8 +209,6 @@
 .empty-page p,
 .error-div p {
     font-size: 2em;
-    background-color: rgba(235, 235, 235, 0.5);
-    padding: 0.5em 0;
     letter-spacing: 0.07em;
     width: 100%;
     text-align: center;

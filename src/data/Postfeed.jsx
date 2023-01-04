@@ -69,7 +69,7 @@ const PostFeed = [
         username: 'Jack De Sparrow',
         designation: 'Studied cognitive psychology from NZ University, Andromeda',
         date: '5 y',
-        question: 'What is Quantum Mechanics in simple language?',
+        question: 'What is cognitive psychology in simple language?',
         excerpt: '❱ Cognitive science is the scientific study of the mind and mental processes and incorporates different fields like philosophy, psychology,technology, neuroscience, and anthropology.',
         readmore: `❱ Cognitive psychology is more focused on information processing and behavior.\n\n❱ Cognitive neuroscience studies the underlying biology of information processing and behavior.\n\nI think of it like this circle in the picture:\n\nCognitive science in the outer circle, cognitive psychology in the middle, and cognitive neuroscience in the center.\n\nI think there are two key differences that separate cognitive science and cognitive psychology. The first being the study of cognitive science in technology/AI, essentially machine cognition. The second being anthropology which serves to understand origins of modern day cognition.`,
         image: 'https://i.pinimg.com/564x/4f/5e/05/4f5e0548ed70255a313b75fe57f85b8b.jpg',

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import MessageComp from './MessageComp';
 import NotificationData from '../../data/NotificationData';
+import { BsBellSlashFill } from "react-icons/bs";
 
 function NotificationSection() {
     /* state of notifications */
@@ -94,6 +95,7 @@ function NotificationSection() {
                         })
                     }
                     <div className={noNoticeDiv}>
+                        <span><BsBellSlashFill /></span>
                         <span>No notification here</span>
                     </div>
                 </div>

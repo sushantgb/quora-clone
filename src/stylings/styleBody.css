@@ -687,14 +687,16 @@ body{
     align-items: center;
     padding: 2em;
     height: 20em;
-    background: url(https://cdn.dribbble.com/users/5024906/screenshots/15337975/media/74b0b74674755f1388c2495b9d6deafc.png) center no-repeat;
     background-size: contain;
     background-color: white;
+}
+.no-notification span:first-child{
+    font-size: 5em;
 }
 .no-notification span{
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     font-size: 2em;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -702,4 +704,20 @@ body{
     width: 100%;
     height: 100%;
     text-shadow: 1px 2px 5px rgb(160, 157, 157);
+}
+
+/* no search or filter div */
+.no-data-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgb(201, 39, 39);
+}
+.no-data-div span:first-child{
+    font-size: 5em;
 }
