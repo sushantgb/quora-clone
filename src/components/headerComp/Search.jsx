@@ -1,6 +1,7 @@
 import React, { useState} from "react";
 import { useGlobalContext } from "../../context/Context";
 
+/* search field on header */
 function Search() {
     /* utilising the global context */
     const [contextValue, setContextValue] = useGlobalContext();
@@ -19,7 +20,7 @@ function Search() {
     return (
         <>
             <div className="search-bar">
-                <i class="bi bi-search"></i>
+                <i className="bi bi-search"></i>
                 <input 
                     type="text"
                     value= {inputState} 

@@ -1,5 +1,6 @@
 import React from "react";
 
+/* dummy try quora+ button */
 function TryBtn() {
     return (
         <>

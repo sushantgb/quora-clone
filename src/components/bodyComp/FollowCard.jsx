@@ -1,5 +1,6 @@
 import React from 'react';
 
+/* follow btn component for right sidebar */
 function FollowCard(props) {
   return (
     <div>

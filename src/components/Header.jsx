@@ -7,6 +7,7 @@ import TryBtn from "./headerComp/TryBtn";
 import ProfileIcons from "./headerComp/ProfileIcon";
 import QuestBtn from "./headerComp/QuestBtn";
 
+/* main header component parent */
 function Header() {
     return (
         <>
@@ -24,15 +25,3 @@ function Header() {
 }
 
 export default Header;
-
-
-/* 
-change state icons when hover
-
-home: <i class="bi bi-house-fill"></i>
-following: <i class="bi bi-filter-square-fill"></i>
-
-instead of changing the icon we can also change the background color which will be more suitable option
-
-
-*/

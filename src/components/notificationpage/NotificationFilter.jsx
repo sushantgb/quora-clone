@@ -1,6 +1,7 @@
 import React from 'react';
 import { useGlobalContext } from '../../context/Context';
 
+/* notification filters */
 const NotificationFilter = (props) => {
     /* for updating context on notification filter button click*/
     const [contextValue, setContextValue] = useGlobalContext();

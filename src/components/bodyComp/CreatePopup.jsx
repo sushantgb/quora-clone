@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import AddQuest from './AddQuest';
 
+/* component for popup of add question and create post */
 function CreatePopup(props) {
 
     const [tabSelection, setTabSelection] = useState(true);
@@ -33,7 +34,7 @@ function CreatePopup(props) {
         <div className='post-popup'>
             <div className='inner-content'>
                 <div className='popper-head'>
-                    <button className='close-popup' onClick={props.popclosed}><i class="bi bi-x-lg"></i></button>
+                    <button className='close-popup' onClick={props.popclosed}><i className="bi bi-x-lg"></i></button>
                 </div>
                 <div className='tabs-nav'>
                     <div id='ask-quest' onClick={() => setTabSelection(true)}>

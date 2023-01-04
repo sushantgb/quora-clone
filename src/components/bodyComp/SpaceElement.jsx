@@ -1,6 +1,7 @@
 import React from "react";
 import { useGlobalContext } from "../../context/Context";
 
+/* space filters component */
 function SpaceElement(props) {
     /* utilising and updating context */
     const [contextValue, setContextValue] = useGlobalContext();

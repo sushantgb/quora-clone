@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Avatar from '../headerComp/images/avatar.png';
 
+/* component which displays popup on add question */
 function AddQuest(props) {
 
   /* for floating dropdown box for ask tab */

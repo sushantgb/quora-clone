@@ -2,12 +2,13 @@ import React from "react";
 import SpaceData from "../../data/SpacesData";
 import SpaceElement from "./SpaceElement";
 
+/* left sidebar which has spaces filter */
 function LeftSidebar() {
     return (
         <>
             <div className="spaces">
                 <div className="create-spaces">
-                    <i class="bi bi-plus"></i>
+                    <i className="bi bi-plus"></i>
                     <input type='text' />
                 </div>
                 <div className="spaces-list">
@@ -23,7 +24,7 @@ function LeftSidebar() {
                     }
                 </div>
                 <div className="discover-spaces">
-                    <i class="bi bi-compass"></i>
+                    <i className="bi bi-compass"></i>
                     <input type='text' />
                 </div>
             </div>

@@ -4,6 +4,7 @@ import PostFeedCards from './PostFeedCards';
 import { useGlobalContext } from '../../context/Context';
 import { CgUnavailable } from "react-icons/cg";
 
+/* component for post feed and other components display in middle section */
 export default function PostFeedComp() {
     /* using the global context */
     const contextValue = useGlobalContext();

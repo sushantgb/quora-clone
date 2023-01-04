@@ -2,6 +2,7 @@ import React from 'react';
 import QuestionFeed from '../../data/Rightbarfeed';
 import FollowCard from './FollowCard';
 
+/* right side bar for dummy follow spaces options */
 function RightSideBar() {
     return (
         <div className='right-bar'>

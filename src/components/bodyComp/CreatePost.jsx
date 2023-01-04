@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Avatar from "../headerComp/images/avatar.png";
 import CreatePopup from "./CreatePopup";
 
+/* component which displays popup on create post option */
 function CreatePost() {
 
     /* when user focuses on the input field */
@@ -17,7 +18,7 @@ function CreatePost() {
                 <div className="lower">
                     <div className="part">
                         <button type="button" className="creat-post-icons" onClick={() => setPopupBtn(true)}>
-                            <i class="bi bi-question-diamond"></i>
+                            <i className="bi bi-question-diamond"></i>
                             <span>Ask</span>
                         </button>
                     </div>
@@ -26,7 +27,7 @@ function CreatePost() {
                     </div>
                     <div className="part">
                         <button type="button" className="creat-post-icons">
-                            <i class="bi bi-pencil-square"></i>
+                            <i className="bi bi-pencil-square"></i>
                             <span>Answer</span>
                         </button>
                     </div>
@@ -35,7 +36,7 @@ function CreatePost() {
                     </div>
                     <div className="part">
                         <button type="button" className="creat-post-icons" onClick={() => setPopupBtn(true)}>
-                            <i class="bi bi-pen"></i>
+                            <i className="bi bi-pen"></i>
                             <span>Post</span>
                         </button>
                     </div>

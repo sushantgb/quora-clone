@@ -5,6 +5,7 @@ import MiddleSection from "./bodyComp/MiddleSection";
 import PostFeedComp from "./bodyComp/PostFeedComp";
 import RightSideBar from "./bodyComp/RightSideBar";
 
+/* main body component of app */
 function BodyContent() {
     return (
         <>

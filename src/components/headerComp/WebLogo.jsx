@@ -3,6 +3,7 @@ import logo from "./images/logo.png";
 import { NavLink } from "react-router-dom";
 import { useGlobalContext } from "../../context/Context";
 
+/* quora icon button for site identification and home button functionality */
 function WebLogo() {
     /* refreshing the context and state of posts when quora icon is clicked */
     const [contextValue, setContextValue] = useGlobalContext();

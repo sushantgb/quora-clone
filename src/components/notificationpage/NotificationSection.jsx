@@ -6,6 +6,7 @@ import NotificationFiltersData from '../../data/NotificationFiltersData';
 import NotificationFilter from './NotificationFilter';
 import { useGlobalContext } from '../../context/Context';
 
+/* notification section which holds all the notifications */
 function NotificationSection() {
     /* context utilisation */
     const contextValue2 = useGlobalContext();
@@ -81,6 +82,7 @@ function NotificationSection() {
                             )
                         })
                     }
+                    {/* div when no notification is present in the filter category */ }
                     <div className={noNoticeDiv}>
                         <span><BsBellSlashFill /></span>
                         <span>No notification here</span>

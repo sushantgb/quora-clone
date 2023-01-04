@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
+/* main navigation icons of header */
 function HeaderIcons() {
 
     /* for showing the tooltip */
@@ -17,31 +18,31 @@ function HeaderIcons() {
         <>
             <div className="header-icons">
                 <NavLink to='/' className={activeClass} onMouseOver={() => setClassActive("tool")} onMouseOut={() => setClassActive("hidden")}>
-                    <i class="bi bi-house"></i>
+                    <i className="bi bi-house"></i>
                     <div className={classActive}>
                         <span>Home</span>
                     </div>
                 </NavLink>
                 <NavLink to='/following' className={activeClass} onMouseOver={() => setClassActive2("tool2")} onMouseOut={() => setClassActive2("hidden")}>
-                    <i class="bi bi-filter-square"></i>
+                    <i className="bi bi-filter-square"></i>
                     <div className={classActive2}>
                         <span>Following</span>
                     </div>
                 </NavLink>
                 <NavLink to='/answers' className={activeClass} onMouseOver={() => setClassActive3("tool3")} onMouseOut={() => setClassActive3("hidden")}>
-                    <i class="bi bi-pencil-square"></i>
+                    <i className="bi bi-pencil-square"></i>
                     <div className={classActive3}>
                         <span>Answers</span>
                     </div>
                 </NavLink>
                 <NavLink to='/spaces' className={activeClass} onMouseOver={() => setClassActive4("tool4")} onMouseOut={() => setClassActive4("hidden")}>
-                    <i class="bi bi-people"></i>
+                    <i className="bi bi-people"></i>
                     <div className={classActive4}>
                         <span>Spaces</span>
                     </div>
                 </NavLink>
                 <NavLink to='/notifications' className={activeClass} onMouseOver={() => setClassActive5("tool5")} onMouseOut={() => setClassActive5("hidden")}>
-                    <i class="bi bi-bell"></i>
+                    <i className="bi bi-bell"></i>
                     <div className={classActive5}>
                         <span>Notifications</span>
                     </div>

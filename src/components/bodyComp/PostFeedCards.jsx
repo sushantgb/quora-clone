@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+/* post feed settings */
 function PostFeedCards(props) {
 
     /* for toggling readmore button */
@@ -53,7 +54,7 @@ function PostFeedCards(props) {
                     </div>
                 </div>
                 <div className='cross-button'>
-                    <button value='shrink' onClick={ToggleFunc}title='Close'><i class="bi bi-x-lg"></i></button>
+                    <button value='shrink' onClick={ToggleFunc}title='Close'><i className="bi bi-x-lg"></i></button>
                 </div>
             </div>
             <div className='question-bar'>
