@@ -1,21 +1,34 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import MessageComp from './MessageComp';
 import NotificationData from '../../data/NotificationData';
 import { BsBellSlashFill } from "react-icons/bs";
+import NotificationFiltersData from '../../data/NotificationFiltersData';
+import NotificationFilter from './NotificationFilter';
+import { useGlobalContext } from '../../context/Context';
 
 function NotificationSection() {
+    /* context utilisation */
+    const contextValue2 = useGlobalContext();
     /* state of notifications */
     const [notice, setNotice] = useState(NotificationData);
     /* state of div when there is no notification in the filter */
     const [noNoticeDiv, setNoNoticeDiv] = useState("notice-hidden");
-    /* function to filter and change state of notifications */
-    const FilterFunc = (name) => {
-        if (name === "All Notifications") {
+    
+    /* to filter and change state of notifications */
+    useEffect(()=>{
+        /* default value */
+        if(contextValue2[0] === "All" || contextValue2[0] === "all"){
             setNotice(NotificationData);
             setNoNoticeDiv("notice-hidden");
-        } else {
+        }else{
+            /* updates on clicking the filters */
             const updater = NotificationData.filter((val) => {
-                return val.category === name;
+                return (
+                    val.category.toLowerCase() === contextValue2[0] ||
+                    val.title.toLowerCase().includes(contextValue2[0]) ||
+                    val.message.toLowerCase().includes(contextValue2[0]) ||
+                    val.details.toLowerCase().includes(contextValue2[0])    
+                );
             })
             /* when notification is empty */
             if(!updater.length){
@@ -25,7 +38,8 @@ function NotificationSection() {
             }
             setNotice(updater);
         }
-    }
+    }, [contextValue2])
+    
     return (
         <div className='notification-div'>
             {/* notification buttons */}
@@ -34,43 +48,16 @@ function NotificationSection() {
                     <span className='notice-head'>Filters</span>
                 </div>
                 <div className='filters-list'>
-                    <div>
-                        <button onClick={() => FilterFunc("All Notifications")}>All Notifications</button>
-                    </div>
-                    <div>
-                        <button onClick={() => FilterFunc("Stories")}>Stories</button>
-                    </div>
-                    <div>
-                        <button onClick={() => FilterFunc("Spaces")}>Spaces</button>
-                    </div>
-                    <div>
-                        <button onClick={() => FilterFunc("Upvotes")}>Upvotes</button>
-                    </div>
-                    <div>
-                        <button onClick={() => FilterFunc("Your profile")}>Your profile</button>
-                    </div>
-
-                    <div>
-                        <button onClick={() => FilterFunc("Questions")}>Questions</button>
-                    </div>
-                    <div>
-                        <button onClick={() => FilterFunc("Announcements")}>Announcements</button>
-                    </div>
-                    <div>
-                        <button onClick={() => FilterFunc("People updates")}>People updates</button>
-                    </div>
-                    <div>
-                        <button onClick={() => FilterFunc("Comments and mentions")}>Comments and mentions</button>
-                    </div>
-                    <div>
-                        <button onClick={() => FilterFunc("Your content")}>Your content</button>
-                    </div>
-                    <div>
-                        <button onClick={() => FilterFunc("Subscriptions")}>Subscriptions</button>
-                    </div>
-                    <div>
-                        <button onClick={() => FilterFunc("Earnings")}>Earnings</button>
-                    </div>
+                    {
+                        NotificationFiltersData.map((val) => {
+                            return(
+                                <NotificationFilter 
+                                    key={val.key}
+                                    btnvalue={val.btnvalue}
+                                />
+                            )
+                        })
+                    }    
                 </div>
             </div>
             {/* notifications */}
