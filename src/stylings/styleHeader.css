@@ -65,6 +65,7 @@
     gap: 1em;
     padding: 0;
 }
+
 .header-icons .navlinks {
     display: flex;
     justify-content: center;
@@ -78,6 +79,7 @@
 .header-icons .navlinks:hover {
     border-bottom: solid;
 }
+
 /* active link class */
 .header-icons .active {
     border: solid white;
@@ -87,15 +89,17 @@
     padding: 0.7em 0.7em;
     transition: all 0.5s;
 }
+
 /* hidden class for tooltip */
-.hidden{
+.hidden {
     display: none;
 }
+
 .tool,
 .tool2,
 .tool3,
 .tool4,
-.tool5{
+.tool5 {
     display: block;
     position: absolute;
     top: 8em;
@@ -195,10 +199,12 @@
     height: 100vh;
     background-color: rgb(135, 212, 248);
 }
+
 .empty-page span:first-child,
-.error-div span:first-child{
-    font-size: 10em;   
+.error-div span:first-child {
+    font-size: 10em;
 }
+
 .empty-page .head,
 .error-div .head {
     font-size: 5em;
@@ -212,4 +218,129 @@
     letter-spacing: 0.07em;
     width: 100%;
     text-align: center;
+}
+
+/* responsive header */
+@media screen and (max-width: 700px) {
+    .header {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas:
+            "webID webID"
+            "headerIcon headerIcon"
+            "searchBar profIcon"
+            "tryBtn questBtn"
+        ;
+        padding: 0.1em 0.1em 0.5em 0.1em;
+        gap: 0.1em;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .websiteIdentity {
+        grid-area: webID;
+    }
+
+    .search-bar {
+        grid-area: searchBar;
+    }
+
+    .search-bar input {
+        font-size: 1em;
+        width: 11em;
+    }
+
+    .header-icons {
+        grid-area: headerIcon;
+    }
+
+    .try-button {
+        display: flex;
+        grid-area: tryBtn;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0.1em;
+    }
+    .try-button button{
+        width: 100%;
+        padding: 0.9em;
+        border-radius: 0.5em;
+    }
+
+    .profile-icons {
+        grid-area: profIcon;
+        justify-content: flex-end;
+        padding: 0;
+    }
+
+    .quest-button {
+        grid-area: questBtn;
+        justify-content: flex-end;
+        font-size: 0.8em;
+        padding: 0;
+    }
+
+    .empty-page,
+    .error-div {
+        margin-top: 10em;
+        font-size: 0.5em;
+    }
+}
+
+/* for tablets and little wider mobile devices */
+@media screen and (max-width: 1100px) and (min-width: 710px) {
+    .header {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-areas:
+            "webID headerIcon tryBtn profIcon"
+            "searchBar searchBar searchBar questBtn"
+        ;
+        padding: 0.2em;
+        gap: 0.2em;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .websiteIdentity {
+        grid-area: webID;
+    }
+
+    .search-bar {
+        grid-area: searchBar;
+        justify-content: flex-start;
+    }
+
+    .search-bar input {
+        font-size: 1em;
+        width: 10em;
+    }
+
+    .header-icons {
+        grid-area: headerIcon;
+    }
+
+    .try-button {
+        display: flex;
+        grid-area: tryBtn;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .profile-icons {
+        grid-area: profIcon;
+        justify-content: flex-end;
+    }
+
+    .quest-button {
+        grid-area: questBtn;
+        justify-content: flex-end;
+    }
+
+    .empty-page,
+    .error-div {
+        font-size: 0.5em;
+    }
 }

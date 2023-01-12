@@ -1,8 +1,9 @@
 /* container style */
-body{
+body {
     background-color: rgba(202, 202, 202, 0.8);
 }
-.container{
+
+.container {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -12,7 +13,7 @@ body{
 
 
 /* styling for spaces */
-.spaces{
+.spaces {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
@@ -22,7 +23,7 @@ body{
 }
 
 .create-spaces,
-.discover-spaces{
+.discover-spaces {
     display: flex;
     padding: 0.5em;
     border-radius: 0.2em;
@@ -31,58 +32,67 @@ body{
     width: 100%;
     cursor: pointer;
 }
+
 .create-spaces input,
-.discover-spaces input{
+.discover-spaces input {
     background: none;
     border-style: none;
     cursor: pointer;
 }
+
 .create-spaces input:focus,
-.discover-spaces input:focus{
+.discover-spaces input:focus {
     outline: none;
 }
-.spaces-list{
+
+.spaces-list {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 1em;
 }
-.space-card{
+
+.space-card {
     display: flex;
     justify-content: flex-start;
     align-content: center;
     align-items: center;
     gap: 0.5em;
 }
-.space-icon{
+
+.space-icon {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0.1em;
 }
-.space-icon img{
+
+.space-icon img {
     width: 1.5em;
     height: 1.5em;
     border: solid thin rgb(211, 210, 210);
     padding: 0.1em;
     border-radius: 0.2em;
 }
-.space-category{
+
+.space-category {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.space-category button{
+
+.space-category button {
     text-decoration: none;
-    border-style:none;
+    border-style: none;
     background: none;
     color: rgb(53, 52, 52);
     cursor: pointer;
+    text-align: left;
 }
 
 /* middle section styling */
-.middle-segment{
+.middle-segment {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -93,64 +103,83 @@ body{
 }
 
 /* post section styling */
-.post-section{
+.post-section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items:flex-start;
+    align-items: flex-start;
     border: solid thin rgb(212, 212, 212);
-    padding: 1em 0.5em 0.5em 0.5em;
+    padding: 1em;
     border-radius: 0.5em;
     width: 100%;
     background-color: white;
 }
-.upper{
+
+.upper {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    gap: 1em;
+    gap: 0.5em;
+    width: 100%;
 }
-.lower{
+
+.upper div:first-child {
+    width: 10%;
+    padding: 0.9em 0;
+}
+
+.upper div:nth-child(2) {
+    width: 90%;
+    padding: 0;
+}
+
+.post-section input {
+    padding: 1em;
+    width: 100%;
+    border: solid thin rgb(185, 185, 185);
+    border-radius: 2em;
+    background-color: rgb(236, 236, 236, 0.5);
+}
+
+.lower {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     padding: 0.5em;
 }
-.part button{
+
+.part button {
     display: flex;
     gap: 0.5em;
     padding: 0.5em 3em;
     background: none;
-    border-style:none;
+    border-style: none;
     font-size: 1em;
     border-radius: 2em;
     cursor: pointer;
     transition: all 0.5s;
 }
-.part button:hover{
-    background-color:rgb(233, 232, 232);
+
+.part button:hover {
+    background-color: rgb(233, 232, 232);
 }
-.divider{
+
+.divider {
     color: grey;
 }
-.post-section img{
-    width: 2em;
+
+.post-section img {
+    width: 2.5em;
 }
-.post-section input{
-    padding: 1em;
-    width: 40em;
-    border: solid thin rgb(185, 185, 185);
-    border-radius: 2em;
-    background-color: rgb(236, 236, 236, 0.5);
-}
-.post-section input:focus{
+
+.post-section input:focus {
     outline: none;
 }
 
 /* popup styling for creating the post */
-.post-popup{
-    position:fixed;
+.post-popup {
+    position: fixed;
     top: 0;
     left: 0;
     margin: auto;
@@ -162,7 +191,8 @@ body{
     height: 100vh;
     z-index: 100;
 }
-.inner-content{
+
+.inner-content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -176,11 +206,13 @@ body{
     border-radius: 0.8em;
     z-index: 100;
 }
-.popper-head{
+
+.popper-head {
     display: flex;
     justify-content: flex-start;
 }
-.close-popup{
+
+.close-popup {
     background: none;
     border-style: none;
     font-size: 1.2em;
@@ -190,21 +222,24 @@ body{
     width: 2em;
     transition: all 0.5s;
 }
-.close-popup:hover{
+
+.close-popup:hover {
     background-color: rgb(207, 205, 205);
 }
 
-.tabs-nav{
+.tabs-nav {
     display: flex;
     justify-content: center;
 }
-.tabs-nav div{
+
+.tabs-nav div {
     display: flex;
     justify-content: center;
     border-bottom: solid thin grey;
     width: 250%;
 }
-.tabs-nav button{
+
+.tabs-nav button {
     padding: 0.8em;
     border-style: none;
     background: none;
@@ -213,26 +248,29 @@ body{
     font-size: 1em;
     font-weight: bold;
 }
-.tabs-nav button:active{
+
+.tabs-nav button:active {
     border-bottom: blue;
 }
 
 /* styling for creating-post section */
-.question-section{
+.question-section {
     padding: 2em 0.5em;
 }
 
-.user-category{
+.user-category {
     display: flex;
     justify-content: flex-start;
-    align-items:flex-start;
+    align-items: flex-start;
     gap: 0.5em;
 }
-.user-category img{
+
+.user-category img {
     width: 1.5em;
     height: 1.5em;
 }
-.user-category button{
+
+.user-category button {
     display: flex;
     gap: 0.8em;
     padding: 0.5em;
@@ -244,27 +282,29 @@ body{
     cursor: pointer;
 }
 
-.user-category button:hover{
+.user-category button:hover {
     opacity: 0.7;
 }
 
-.field-box{
+.field-box {
     height: 30vh;
     padding: 1em 0;
 }
-.field-box input{
+
+.field-box input {
     width: 100%;
     padding: 1em 0 0.5em 0.2em;
     border-style: none;
     border-bottom: solid rgb(175, 174, 174) thin;
     font-size: 1.1em;
 }
+
 .field-box input:focus,
-.field-box textarea:focus{
+.field-box textarea:focus {
     outline: none;
 }
 
-.field-box textarea{
+.field-box textarea {
     width: 100%;
     padding: 1em 0 0.5em 0.2em;
     border-style: none;
@@ -273,14 +313,15 @@ body{
 }
 
 /* footer buttons in the popup */
-.foot-buttons{
+.foot-buttons {
     display: flex;
     justify-content: flex-end;
     border-top: solid grey thin;
     padding: 1em;
     gap: 1em;
 }
-.foot-buttons button{
+
+.foot-buttons button {
     padding: 1em 2em;
     background: none;
     border-style: none;
@@ -288,101 +329,119 @@ body{
     cursor: pointer;
     transition: all 0.5s;
 }
-#cancelFoot:hover{
+
+#cancelFoot:hover {
     background-color: rgb(167, 167, 167, 0.5);
 }
-#submitFoot{
+
+#submitFoot {
     background-color: rgba(13, 13, 226, 0.8);
     color: white;
 }
-#submitFoot:hover{
+
+#submitFoot:hover {
     opacity: 0.6;
 }
 
 /* dropdown for post visibility */
-.drop-options{
+.drop-options {
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 2px grey;
     position: relative;
     top: 0em;
 }
-.dropper-list{
+
+.dropper-list {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
 }
-.dropper-list input[type="radio"]{
+
+.dropper-list input[type="radio"] {
     visibility: hidden;
 }
-.dropper-list label{
+
+.dropper-list label {
     cursor: pointer;
     padding: 0.2em;
 }
-.list-element:hover{
+
+.list-element:hover {
     background-color: rgb(206, 205, 205, 0.5);
 }
-.list-element{
+
+.list-element {
     display: flex;
     gap: 0;
     padding: 0.5em 3em 0.5em 0;
 }
 
 /* posts feed styling */
-.post-feed{
+.post-feed {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2em;
 }
-.post-feed-card{
+
+.post-feed-card {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     align-content: center;
-    border:solid thin rgb(212, 212, 212);
+    border: solid thin rgb(212, 212, 212);
     border-radius: 0.5em;
     padding: 1em;
     gap: 0.2em;
     background-color: white;
 }
-.feed-upper{
+
+.feed-upper {
     display: flex;
     justify-content: flex-start;
+    align-items: flex-start;
     width: 100%;
 }
 
-.user-avatar img{
+.user-avatar img {
     height: 3em;
     width: 3em;
 }
-.user-details{
+
+.user-details {
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     gap: 0.2em;
     padding: 0.5em;
     width: 80%;
 }
-.user-heading{
+
+.user-heading {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     align-content: center;
     gap: 0.5em;
 }
-.user-heading button{
+
+.user-heading button {
     border-style: none;
     background: none;
     cursor: pointer;
     color: blue;
     transition: all 0.5s;
 }
-.user-heading button:hover{
+
+.user-heading button:hover {
     opacity: 0.7;
 }
-.user-description{
+
+.user-description {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -391,15 +450,17 @@ body{
     font-size: 0.8em;
     color: rgb(85, 85, 85);
 }
-.cross-button, 
-.three-dots-btn{
+
+.cross-button,
+.three-dots-btn {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
     width: 20%;
 }
+
 .cross-button button,
-.three-dots-btn button{
+.three-dots-btn button {
     background: none;
     border-style: none;
     font-size: 1em;
@@ -408,14 +469,17 @@ body{
     padding: 0.5em;
     transition: all 0.5s;
 }
+
 .cross-button button:hover,
-.three-dots-btn button:hover{
+.three-dots-btn button:hover {
     background-color: rgb(192, 188, 188, 0.7);
 }
-.question-bar{
+
+.question-bar {
     padding: 1em 0;
 }
-.post-bar{
+
+.post-bar {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -423,7 +487,8 @@ body{
     text-align: justify;
     gap: 1em;
 }
-.read-more-btn{
+
+.read-more-btn {
     display: inline;
     border-style: none;
     background: none;
@@ -431,10 +496,12 @@ body{
     color: blue;
     transition: all 0.5s;
 }
-.read-more-btn:hover{
+
+.read-more-btn:hover {
     opacity: 0.7;
 }
-.expanded-text{
+
+.expanded-text {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -443,10 +510,12 @@ body{
     text-align: justify;
     white-space: pre-wrap;
 }
-.views-text{
+
+.views-text {
     color: grey;
 }
-.image-sect{
+
+.image-sect {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -454,12 +523,13 @@ body{
     margin: 1em 0 1em 0;
     width: 100%;
 }
-.image-sect img{
+
+.image-sect img {
     width: 100%;
 }
 
 /* buttons styling in the bottom of posts */
-.buttons-bar{
+.buttons-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -467,7 +537,8 @@ body{
     gap: 1em;
     width: 100%;
 }
-.reaction-buttons{
+
+.reaction-buttons {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -476,7 +547,7 @@ body{
     width: 80%;
 }
 
-.upvote-btns{
+.upvote-btns {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -486,7 +557,8 @@ body{
     border-radius: 2em;
     gap: 1em;
 }
-.upvote-btns button{
+
+.upvote-btns button {
     border-style: none;
     background: none;
     cursor: pointer;
@@ -494,19 +566,22 @@ body{
     border-radius: 100%;
     padding: 0.5em;
 }
-.upvote-btns button:hover{
+
+.upvote-btns button:hover {
     opacity: 0.7;
 }
-.upvoteBtn, 
-.downvoteBtn{
+
+.upvoteBtn,
+.downvoteBtn {
     color: grey;
 }
-.votes-count{
+
+.votes-count {
     color: grey;
 }
 
 .comment-info,
-.repost-info{
+.repost-info {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -516,8 +591,9 @@ body{
     border-radius: 2em;
     color: grey;
 }
+
 .comment-icon,
-.repost-icon{
+.repost-icon {
     border-style: none;
     background: none;
     color: grey;
@@ -526,19 +602,20 @@ body{
 
 
 /* extra classes */
-.hidden-class{
+.hidden-class {
     display: none;
 }
-.blue-class{
+
+.blue-class {
     color: blue;
 }
 
 /* for right bar */
-.right-bar{
+.right-bar {
     display: flex;
     flex-direction: column;
     border: solid thin rgb(163, 162, 162, 0.5);
-    padding:0 0 0.4em 0;
+    padding: 0 0 0.4em 0;
     border-radius: 0.5em;
     justify-content: flex-start;
     align-items: flex-start;
@@ -547,12 +624,14 @@ body{
     right: 6.5em;
     background-color: white;
 }
-.follow-feed-head{
+
+.follow-feed-head {
     border-bottom: solid thin rgb(202, 200, 200);
     padding: 1em;
     width: 100%;
 }
-.follow-cards{
+
+.follow-cards {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -563,15 +642,18 @@ body{
     cursor: pointer;
     transition: all 0.5s;
 }
-.follow-cards:hover{
+
+.follow-cards:hover {
     background-color: rgba(210, 211, 212, 0.5);
 }
-.follow-icons{
+
+.follow-icons {
     border: solid thin rgb(187, 186, 186);
     border-radius: 0.3em;
     padding: 0.2em;
 }
-.follow-card-details{
+
+.follow-card-details {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -579,22 +661,25 @@ body{
     align-items: flex-start;
     gap: 0.2em;
 }
-.follow-card-details h5{
+
+.follow-card-details h5 {
     letter-spacing: 0.05em;
     text-transform: uppercase;
 }
-.follow-card-details span{
+
+.follow-card-details span {
     color: grey;
     font-size: 0.7em;
     width: 80%;
 }
-.follow-icons img{
+
+.follow-icons img {
     width: 2em;
     height: 2em;
 }
 
 /* notification page */
-.notification-container{
+.notification-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -603,32 +688,38 @@ body{
     width: 100%;
     margin: auto;
 }
-.notification-div{
+
+.notification-div {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
     gap: 1em;
 }
-.filters-notices{
+
+.filters-notices {
     width: 25%;
 }
-.notice-head-div{
+
+.notice-head-div {
     margin-bottom: 1em;
 }
-.notice-head{
+
+.notice-head {
     font-size: 1em;
     font-weight: bolder;
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
-.filters-list{
+
+.filters-list {
     display: flex;
     flex-direction: column;
     position: fixed;
     width: 20%;
 }
-.filters-list button{
+
+.filters-list button {
     padding: 1em;
     width: 100%;
     text-align: left;
@@ -637,51 +728,62 @@ body{
     transition: all 0.5s;
     background-color: white;
 }
-.filters-list button:hover{
+
+.filters-list button:hover {
     background-color: rgb(245, 117, 117);
 }
-.messages-section{
+
+.messages-section {
     width: 70%;
 }
-.message-list{
+
+.message-list {
     display: flex;
     flex-direction: column;
     gap: 0.3em;
 }
-.message-list img{
+
+.message-list img {
     width: 3em;
     height: 3em;
 }
+
 /* notification card */
-.message-card{
+.message-card {
     display: flex;
     background-color: white;
     padding: 1em;
     gap: 0.5em;
     cursor: pointer;
 }
-.message-details{
+
+.message-details {
     display: flex;
     flex-direction: column;
     gap: 0.2em;
 }
-.message-details .message-head span{
+
+.message-details .message-head span {
     font-size: small;
     color: grey;
 }
-.message-details .message-bold span{
+
+.message-details .message-bold span {
     letter-spacing: 0.05em;
-    font-weight:600;
+    font-weight: 600;
 }
-.message-details .message-describe span{
+
+.message-details .message-describe span {
     color: rgb(87, 86, 86);
     font-size: 0.9em;
 }
+
 /* when there is no notification */
-.notice-hidden{
+.notice-hidden {
     display: none;
 }
-.no-notification{
+
+.no-notification {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -690,10 +792,12 @@ body{
     background-size: contain;
     background-color: white;
 }
-.no-notification span:first-child{
+
+.no-notification span:first-child {
     font-size: 5em;
 }
-.no-notification span{
+
+.no-notification span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -707,7 +811,7 @@ body{
 }
 
 /* no search or filter div */
-.no-data-div{
+.no-data-div {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -718,6 +822,453 @@ body{
     letter-spacing: 0.1em;
     color: rgb(201, 39, 39);
 }
-.no-data-div span:first-child{
+
+.no-data-div span:first-child {
     font-size: 5em;
+}
+
+/* responsiveness settings */
+@media screen and (max-width: 750px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        margin-top: 15em;
+    }
+
+    .spaces {
+        position: static;
+        background-color: white;
+        padding: 0.5em;
+        width: 98%;
+        border-radius: 0.2em;
+    }
+
+    .spaces-list {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .space-category {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .space-category button {
+        font-size: 0.7em;
+    }
+
+    .space-card {
+        padding: 0.2em 0.2em;
+        transition: all 0.5s;
+        gap: 0.2em;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .space-card:hover {
+        background-color: rgb(214, 213, 213);
+    }
+
+    .create-spaces,
+    .discover-spaces {
+        display: none;
+    }
+
+    .middle-segment {
+        position: relative;
+        left: 0em;
+        width: 100%;
+        padding: 0.2em;
+    }
+
+    /* for the post creation */
+    /* .post-section {
+        justify-content: center;
+        align-items: center;
+        padding: 0.2em;
+    } */
+    .upper {
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .lower {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .part button {
+        padding: 0.5em 1.2em;
+    }
+
+    /* posts feed styling */
+
+    .post-feed {
+        width: 100%;
+    }
+
+    .post-feed-card {
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    .user-details {
+        width: 100%;
+        font-size: 0.75em;
+    }
+
+    .user-heading {
+        align-items: baseline;
+        font-size: 1.5em;
+    }
+
+    .user-heading button {
+        font-size: 0.7em;
+    }
+
+    .user-description {
+        justify-content: flex-start;
+    }
+
+    .cross-button,
+    .three-dots-btn {
+        width: 10%;
+    }
+
+    .read-more-btn {
+        font-size: 0.8em;
+    }
+
+    .buttons-bar {
+        font-size: 0.8em;
+    }
+
+    .reaction-buttons {
+        width: 90%;
+        gap: 0.5em;
+    }
+
+    .upvote-btns {
+        padding: 0.1em;
+    }
+
+    .upvote-btns button {
+        padding: 0.3em;
+    }
+
+    /* for popup styling in mobile devices */
+    .inner-content {
+        font-size: 0.7em;
+        width: 100%;
+        height: 75%;
+        margin: 0.1em;
+        padding: 0.5em;
+    }
+
+    .user-category button {
+        font-size: 0.9em;
+    }
+
+    .field-box input,
+    .field-box textarea {
+        font-size: 0.95em;
+    }
+
+    .foot-buttons {
+        gap: 0.1em;
+    }
+
+    .foot-buttons button {
+        font-size: 0.9em;
+    }
+
+    .right-bar {
+        display: none;
+    }
+
+    /* notification page settings */
+    .notification-container {
+        display: grid;
+        padding: 15em 0.5em;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .notification-div {
+        gap: 0.2em;
+        width: 100%;
+    }
+    .filters-notices {
+        width: 25%;
+    }
+
+    .filters-list {
+        width: 100%;
+        left: 0.5em;
+        position: static;
+    }
+
+    .filters-list button {
+        font-size: 0.5em;
+    }
+
+    .notice-head-div {
+        margin-bottom: 0.5em;
+        font-size: 0.8em;
+    }
+    .messages-section {
+        width: 77%;
+    }
+    .message-card{
+        font-size: 0.6em;
+    }
+    .message-details .message-head span{
+        font-size: 0.8em;
+    }
+    .no-notification{
+        flex-direction: column;
+        width: 100%;
+    }
+    .no-notification span:first-child{
+        font-size: 5em;
+    }
+    .no-notification span{
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+}
+
+/* responsiveness for tablets */
+@media screen and (max-width: 1100px) and (min-width: 751px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        margin-top: 10em;
+    }
+
+    .spaces {
+        position: static;
+        background-color: white;
+        padding: 0.5em;
+        width: 99%;
+        border-radius: 0.2em;
+    }
+
+    .spaces-list {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .space-category {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .space-category button {
+        font-size: 0.7em;
+    }
+
+    .space-card {
+        padding: 0.2em 0.2em;
+        transition: all 0.5s;
+        gap: 0.2em;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .space-card:hover {
+        background-color: rgb(214, 213, 213);
+    }
+
+    .create-spaces,
+    .discover-spaces {
+        display: none;
+    }
+
+    .middle-segment {
+        position: relative;
+        left: 0em;
+        width: 100%;
+        padding: 0.2em;
+    }
+
+    /* for the post creation */
+    .upper {
+        gap: 1em;
+        width: 100%;
+    }
+
+    .upper div:first-child {
+        width: 10%;
+        text-align: right;
+    }
+
+    .upper div:nth-child(2) {
+        width: 90%;
+    }
+
+    .lower {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .part button {
+        padding: 0.5em 1.2em;
+    }
+
+    .post-section input {
+        padding: 1em;
+        width: 100%;
+        border: solid thin rgb(185, 185, 185);
+        border-radius: 2em;
+        background-color: rgb(236, 236, 236, 0.5);
+    }
+
+    /* posts feed styling */
+
+    .post-feed {
+        width: 100%;
+    }
+
+    .post-feed-card {
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    .user-details {
+        width: 100%;
+        font-size: 0.75em;
+    }
+
+    .user-heading {
+        align-items: baseline;
+        font-size: 1.5em;
+    }
+
+    .user-heading button {
+        font-size: 0.7em;
+    }
+
+    .user-description {
+        justify-content: flex-start;
+    }
+
+    .cross-button,
+    .three-dots-btn {
+        width: 10%;
+    }
+
+    .read-more-btn {
+        font-size: 0.8em;
+    }
+
+    .buttons-bar {
+        font-size: 0.8em;
+    }
+
+    .reaction-buttons {
+        width: 90%;
+        gap: 0.5em;
+    }
+
+    .upvote-btns {
+        padding: 0.1em;
+    }
+
+    .upvote-btns button {
+        padding: 0.3em;
+    }
+
+    /* for popup styling in mobile devices */
+    .inner-content {
+        font-size: 0.7em;
+        width: 100%;
+        height: 75%;
+        margin: 0.1em;
+        padding: 0.5em;
+    }
+
+    .user-category button {
+        font-size: 0.9em;
+    }
+
+    .field-box input,
+    .field-box textarea {
+        font-size: 0.95em;
+    }
+
+    .foot-buttons {
+        gap: 0.1em;
+    }
+
+    .foot-buttons button {
+        font-size: 0.9em;
+    }
+
+    .right-bar {
+        display: none;
+    }
+    /* notification page settings */
+    .notification-container {
+        display: grid;
+        padding: 10em 5em;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .notification-div {
+        gap: 1em;
+        width: 100%;
+    }
+    .filters-notices {
+        width: 30%;
+    }
+
+    .filters-list {
+        width: 100%;
+        position: static;
+    }
+
+    .filters-list button {
+        font-size: 0.8em;
+    }
+
+    .notice-head-div {
+        margin-bottom: 0.5em;
+        font-size: 1em;
+    }
+    .messages-section {
+        width: 70%;
+    }
+    .message-card{
+        font-size: 0.9em;
+    }
+    .message-details .message-head span{
+        font-size: 0.8em;
+    }
+    .no-notification{
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .no-notification span:first-child{
+        font-size: 5em;
+    }
+    .no-notification span{
+        font-size: 0.8em;
+        text-align: center;
+    }
+
 }

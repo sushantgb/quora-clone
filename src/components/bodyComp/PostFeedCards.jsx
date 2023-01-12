@@ -49,7 +49,7 @@ function PostFeedCards(props) {
                     </div>
                     <div className='user-description'>
                         <span>{props.designation}</span>
-                        <span>,</span>
+                        <span> | </span>
                         <span>{props.date}</span>
                     </div>
                 </div>

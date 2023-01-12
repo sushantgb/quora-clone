@@ -12,8 +12,12 @@ function CreatePost() {
         <>
             <div className="post-section">
                 <div className="upper">
-                    <img src={Avatar} alt="profile" />
-                    <input type="text" placeholder="What do you want to ask or share" onFocus={() => setPopupBtn(true)} />
+                    <div>
+                        <img src={Avatar} alt="profile" />
+                    </div>
+                    <div>
+                        <input type="text" placeholder="What do you want to ask or share" onFocus={() => setPopupBtn(true)} />
+                    </div>
                 </div>
                 <div className="lower">
                     <div className="part">
@@ -43,7 +47,7 @@ function CreatePost() {
                 </div>
             </div>
             {/* popup triggered & closed*/}
-            <CreatePopup poppedup = {btnPopup} popclosed = {()=> setPopupBtn(false)} />
+            <CreatePopup poppedup={btnPopup} popclosed={() => setPopupBtn(false)} />
         </>
     );
 }
